@@ -18,8 +18,20 @@ const checkIfNumberIsPrime = (number) => {
   }
 };
 
+const checkBiggestNumber = (numberList) => {
+  let currentBiggestNumber = 1;
+
+  for (let i = 0; i < numberList.length; i++) {
+    if (numberList[i] > currentBiggestNumber) {
+      currentBiggestNumber = numberList[i];
+    }
+  }
+  return currentBiggestNumber;
+};
+
 export default {
   checkVocals,
   checkIfNumberIsEven,
   checkIfNumberIsPrime,
+  checkBiggestNumber,
 };
