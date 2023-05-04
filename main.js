@@ -9,7 +9,17 @@ const checkIfNumberIsEven = (number) => {
   }
 };
 
+const checkIfNumberIsPrime = (number) => {
+  let divisors = [1, number];
+
+  for (let i = 0; i < divisors.length; i++) {
+    if (number % divisors[i] === 0);
+    return true;
+  }
+};
+
 export default {
   checkVocals,
   checkIfNumberIsEven,
+  checkIfNumberIsPrime,
 };
