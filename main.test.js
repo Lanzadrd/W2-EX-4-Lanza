@@ -51,3 +51,22 @@ describe("Given a check biggest number function", () => {
     });
   });
 });
+
+describe("Given a check biggest word function", () => {
+  describe(`When it receives the word list ["jordan", "Yeezy", "Balenciagaga", "ConejoMalo", "Suprememe" ]`, () => {
+    test(`Then it should return "Balenciagaga"`, () => {
+      const wordList = [
+        "jordan",
+        "Yeezy",
+        "Balenciagaga",
+        "ConejoMalo",
+        "Suprememe",
+      ];
+      const result = "Balenciagaga";
+
+      const expectedResult = yeah.checkLargestWord(wordList);
+
+      expect(expectedResult).toBe(result);
+    });
+  });
+});
