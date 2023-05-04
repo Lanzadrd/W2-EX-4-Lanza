@@ -27,9 +27,21 @@ const checkBiggestNumber = (numberList) => {
   return currentBiggestNumber;
 };
 
+const checkLargestWord = (wordList) => {
+  let currentLargestWord = "";
+
+  for (let i = 0; i < wordList.length; i++) {
+    if (wordList[i].length > currentLargestWord.length) {
+      currentLargestWord = wordList[i];
+    }
+  }
+  return currentLargestWord;
+};
+
 export default {
   checkVocals,
   checkIfNumberIsEven,
   checkIfNumberIsPrime,
   checkBiggestNumber,
+  checkLargestWord,
 };
