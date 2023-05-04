@@ -10,12 +10,10 @@ const checkIfNumberIsEven = (number) => {
 };
 
 const checkIfNumberIsPrime = (number) => {
-  let divisors = [1, number];
-
-  for (let i = 0; i < divisors.length; i++) {
-    if (number % divisors[i] === 0);
-    return true;
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) return false;
   }
+  return true;
 };
 
 const checkBiggestNumber = (numberList) => {

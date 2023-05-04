@@ -27,9 +27,9 @@ describe("Given a check even number function", () => {
 });
 
 describe("Given a check prime number function", () => {
-  describe("When it receives the number 23", () => {
+  describe("When it receives the number 11", () => {
     test("Then it should return true", () => {
-      const number = 23;
+      const number = 11;
       const result = true;
 
       const expectedResult = yeah.checkIfNumberIsPrime(number);
